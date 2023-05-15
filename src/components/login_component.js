@@ -8,7 +8,7 @@ export default function Login() {
     e.preventDefault();
 
     console.log(email, password);
-    fetch("https://forgot-pwd-loginapp.onrender.com/login-user", {
+    fetch("https://shorturl-backend-server.onrender.com/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -80,8 +80,7 @@ export default function Login() {
           </div>
           <p className="forgot-password text-right">
             <a href="/sign-up">Sign Up</a>
-            <br></br>
-            <a href="/forgot-password">Forgot Password</a>
+            
           </p>
         </form>
       </div>

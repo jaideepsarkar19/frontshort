@@ -16,7 +16,7 @@ export default function SignUp() {
       e.preventDefault();
 
       console.log(fname, lname, email, password);
-      fetch("https://forgot-pwd-loginapp.onrender.com/register", {
+      fetch("https://shorturl-backend-server.onrender.com/register", {
         method: "POST",
         crossDomain: true,
         headers: {

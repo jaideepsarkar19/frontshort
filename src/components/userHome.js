@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function UserHome({ userData }) {
   const logOut = () => {
@@ -9,7 +9,7 @@ export default function UserHome({ userData }) {
     <div className="auth-wrapper">
       <div className="auth-inner">
         <div>
-          Name<h2>Welcome {userData.fname}</h2>
+          Name<h2>Welcome {userData.fname} to URL-SHORTENER</h2>
           Email <h2>{userData.email}</h2>
           <br />
           <button onClick={logOut} className="btn btn-primary">

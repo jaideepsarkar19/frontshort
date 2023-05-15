@@ -8,7 +8,7 @@ export default function UserDetails() {
   const [admin, setAdmin] = useState(false);
 
   useEffect(() => {
-    fetch("https://forgot-pwd-loginapp.onrender.com/userData", {
+    fetch("https://shorturl-backend-server.onrender.com/userData", {
       method: "POST",
       crossDomain: true,
       headers: {

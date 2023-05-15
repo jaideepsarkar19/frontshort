@@ -22,7 +22,7 @@ export default function AdminHome({ userData }) {
 
   //fetching all user
   const getAllUser = () => {
-    fetch("https://forgot-pwd-loginapp.onrender.com/getAllUser", {
+    fetch("https://shorturl-backend-server.onrender.com/getAllUser", {
       method: "GET",
     })
       .then((res) => res.json())
@@ -44,7 +44,7 @@ export default function AdminHome({ userData }) {
   //deleting user
   const deleteUser = (id, name) => {
     if (window.confirm(`Are you sure you want to delete ${name}`)) {
-      fetch("https://forgot-pwd-loginapp.onrender.com/deleteUser", {
+      fetch("https://shorturl-backend-server.onrender.com/deleteUser", {
         method: "POST",
         crossDomain: true,
         headers: {
@@ -79,7 +79,7 @@ export default function AdminHome({ userData }) {
   }
 
   function getPaginatedUsers(){
-    fetch(`https://forgot-pwd-loginapp.onrender.com/paginatedUsers?page=${currentPage.current}&limit=${limit}`, {
+    fetch(`https://shorturl-backend-server.onrender.com//paginatedUsers?page=${currentPage.current}&limit=${limit}`, {
       method: "GET",
     })
       .then((res) => res.json())
